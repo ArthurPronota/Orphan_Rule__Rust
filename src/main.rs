@@ -1,6 +1,6 @@
 use std::fmt::{Display, write} ;
 
-struct MyWrap(Vec<i32>) ;
+struct MyWrap(Vec<i32>) ;  // <- Это newtype
 
 impl Display for MyWrap {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
